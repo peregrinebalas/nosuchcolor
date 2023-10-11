@@ -7,6 +7,15 @@
   pointer-events: none;
 }
 
+.App-title {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.App-title-nav {
+  color: magenta;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

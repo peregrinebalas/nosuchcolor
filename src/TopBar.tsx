@@ -5,7 +5,7 @@ export default function TopBar() {
         <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          <code>No Such Color</code>
+          <code className="App-title">NO SUCH <span className="App-title-nav">COLOR</span></code>
         </p>
         <a
           className="App-link"
