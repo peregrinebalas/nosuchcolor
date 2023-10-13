@@ -3,19 +3,14 @@
 715.456.5184 | <peregrinereedbalas@gmail.com>  | [LinkedIn](https://www.linkedin.com/in/peregrine-balas/)
 
 ## Professional Summary
-As a software engineer I've been able to combine my interests in betterment and creativity. I enjoy building out ideas to become tangible and sharable experiences, whether that's . From early interests in expressive ideation and design, I've found continuity in software development towards improving the experiences of those around me.
+As a software engineer I've been able to combine my interests in betterment and creativity. I enjoy the process involved in building out ideas to become tangible and sharable experiences, from technical to creative to social problem-solving. From early interests in expressive ideation and design, I've found continuity in software development towards improving the experiences of those around me.
 
 ## Skills
-- Ruby
-- Rails
-- SQL
+- Engineering: Service-Oriented Architectures, 
+- Architecture: Ruby, Rails, JavaScript, React, Elixir, Phoenix, Golang, SQL, AWS
+- Leadership: 
+
 - System debugging
-- Elixir
-- Phoenix
-- React
-- Javascript
-- Golang
-- AWS
 - Troubleshooting and resolution
 - Design optimization
 - Software testing and implementation
