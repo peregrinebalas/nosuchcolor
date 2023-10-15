@@ -3,7 +3,7 @@ import logo from './logo.svg';
 
 export default function Home() {
     return (
-        <div>
+        <div className="App-home">
 
         <img src={logo} className="App-logo" alt="logo" />
             <a

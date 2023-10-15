@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
 import Home from './Home'
-import TopBar from './TopBar'
+import AppHeader from './AppHeader'
 
 function App() {
   return (
     <div className="App">
-      <TopBar></TopBar>
+      <AppHeader></AppHeader>
       <Home></Home>
     </div>
   );

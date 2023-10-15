@@ -34,6 +34,10 @@
   padding-left: 5vh;
 }
 
+.App-home {
+  background-color: black;
+}
+
 .App-link {
   color: #61dafb;
 }
