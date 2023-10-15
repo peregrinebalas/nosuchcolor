@@ -1,5 +1,5 @@
 
-export default function TopBar() {
+export default function AppHeader() {
     return (
         <header className="App-header">
         <p>
