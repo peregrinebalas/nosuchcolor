@@ -8,11 +8,11 @@ export default function Home() {
         <img src={logo} className="App-logo" alt="logo" />
             <a
             className="App-link"
-            href="https://reactjs.org"
+            href="https://github.com/peregrinebalas"
             target="_blank"
             rel="noopener noreferrer"
         >
-            Learn React
+            GitHub
         </a>
         </div>
     );
