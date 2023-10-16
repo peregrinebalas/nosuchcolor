@@ -32,10 +32,12 @@
   font-size: calc(10px + 2vmin);
   color: white;
   padding-left: 5vh;
+  height: 10vh;
 }
 
 .App-home {
   background-color: black;
+  height: 90vh;
 }
 
 .App-link {

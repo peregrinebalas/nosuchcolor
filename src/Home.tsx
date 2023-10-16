@@ -4,8 +4,9 @@ import logo from './logo.svg';
 export default function Home() {
     return (
         <div className="App-home">
-
-        <img src={logo} className="App-logo" alt="logo" />
+        <h3 style={{color: "white"}}>About Me</h3>
+        {/* <img src={logo} className="App-logo" alt="logo" /> */}
+        <div>
         <a
             className="App-link"
             href="https://github.com/peregrinebalas"
@@ -14,6 +15,9 @@ export default function Home() {
         >
             GitHub
         </a>
+        </div>
+        <div>
+       
         <a
             className="App-link"
             href="https://www.linkedin.com/in/peregrine-balas/"
@@ -22,6 +26,9 @@ export default function Home() {
         >
             LinkedIn
         </a>
+        </div>
+        <div>
+
         <a
             className="App-link"
             href="https://www.instagram.com/peregram_/"
@@ -30,6 +37,9 @@ export default function Home() {
         >
             Instagram
         </a>
+        </div>
+        <div>
+
         <a
             className="App-link"
             href="https://www.facebook.com/peregrine.balas"
@@ -38,6 +48,7 @@ export default function Home() {
         >
             Facebook
         </a>
+        </div>
         </div>
     );
   }
