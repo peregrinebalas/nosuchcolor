@@ -1,11 +1,7 @@
-import logo from './logo.svg';
-
-
 export default function Home() {
     return (
         <div className="App-home">
         <h3 style={{color: "white"}}>About Me</h3>
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
         <div>
         <a
             className="App-link"
