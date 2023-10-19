@@ -5,6 +5,7 @@ export default function AppHeader() {
         <p>
           <code className="App-title">NO SUCH <span className="App-title-nav">COLOR</span></code>
         </p>
+        <p>X</p>
 
       </header>
     )
