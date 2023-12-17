@@ -24,8 +24,6 @@ export default App; -->
   });
 </script>
 
-<h2>Size</h2>
-
 {#each [1, 2, 3] as number}
   <label>
     <input type="radio" name="scoops" value={number} />
