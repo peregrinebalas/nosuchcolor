@@ -1,1 +1,1 @@
-<h1>No Such <segment>Color</segment></h1>
+<h1>No Such <span>Color</span></h1>
