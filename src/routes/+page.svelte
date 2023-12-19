@@ -1,7 +1,7 @@
 <script>
   import Header from '$lib/Header.svelte';
-  import Thing from '$lib/Thing.svelte';
+  import Home from '$lib/Home.svelte';
 </script>
 
-<Header></Header>
-<Thing />
+<Header />
+<Home />
