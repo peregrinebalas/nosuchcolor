@@ -1,20 +1,19 @@
 <script>
-  let titles = ['person', 'place', 'thing'];
+  import { title } from './stores.js';
   let sections = [
-    { heading: 'person', title: 'about' },
-    { heading: 'place', title: 'location' },
-    { heading: 'thing', title: 'gallery' },
+    { heading: 'Person', title: 'about' },
+    { heading: 'Place', title: 'location' },
+    { heading: 'Thing', title: 'gallery' },
   ];
-
-  const formatter = new Intl.ListFormat('en', {
-    style: 'long',
-    type: 'conjunction',
-  });
 </script>
 
 {#each sections as section}
   <label>
-    <button name="sections" value={section.heading}>
+    <button
+      name="sections"
+      value={section.heading}
+      on:click={() => ($title = section.heading)}
+    >
       {section.title}
     </button>
   </label>
