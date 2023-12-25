@@ -11,7 +11,7 @@
 }
 
 .App-title {
-  font-weight: bold;
+  /* font-weight: bold; */
   font-style: italic;
 }
 
@@ -32,15 +32,12 @@
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
-  font-size: calc(10px + 2vmin);
+  font-size: 2vmin;
   color: white;
   padding-left: 5vh;
   height: 10vh;
   border-radius: 55px;
   margin: 0 auto;
-}
-
-.App-home {
 }
 
 .App-link {

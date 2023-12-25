@@ -3,5 +3,7 @@
   import Home from '$lib/Home.svelte';
 </script>
 
-<Header />
-<Home />
+<div class="App">
+  <Header />
+  <Home />
+</div>
