@@ -1,18 +1,19 @@
 <script>
   import { title } from './stores.js';
   let sections = [
-    { heading: 'Person', title: 'about' },
-    { heading: 'Place', title: 'location' },
-    { heading: 'Thing', title: 'gallery' },
+    { heading: 'person', title: 'about' },
+    { heading: 'place', title: 'location' },
+    { heading: 'thing', title: 'gallery' },
   ];
 </script>
 
 {#each sections as section}
   <label>
     <button
+      class="button-73"
       name="sections"
       value={section.heading}
-      on:click={() => ($title = section.heading)}
+      on:click={() => ($title = section.heading.toUpperCase())}
     >
       {section.title}
     </button>
