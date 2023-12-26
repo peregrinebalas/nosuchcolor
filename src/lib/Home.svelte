@@ -10,12 +10,12 @@
 {#each sections as section}
   <label>
     <button
-      class="button-73"
+      class="section-button"
       name="sections"
       value={section.heading}
       on:click={() => ($title = section.heading.toUpperCase())}
     >
-      {section.title}
+      <div class="section-title">{section.title}</div>
     </button>
   </label>
 {/each}
