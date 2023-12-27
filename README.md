@@ -15,18 +15,24 @@
 
 ### TODO
 
-- no such information
+no such...
+
+- information
   - i.e. "about" section
   - no such name: there is no such color as pink, at least in terms of wavelengths of light. It exists as an optical illusion by mixing reds and purples. These colors are the lowest and highest wavelengths of light the human eye can see. The spectrum of light extends beyond, but the visible segment to humans is curved in on itself into a circle. This circle is bound together at the ends by pink. There is a fallacy to viewing the spaces where that color is as a human: that the color and the viewer, are both real. In reality, both are illusory. This presents the same question to the reader as it does the writer, who are you?
   - include who/what the site is for
-- no such person
-- no such place
-- no such thing
+- person
+- place
+- thing
   - gallery?
   - do the thing? i.e. code
-- no such host (?)
-- no such directory (?)
-  - no such file
+- host (?)
+- directory (?)
+  - file
+- part
+- message
+- user
+- element
 
 ## Technologies
 

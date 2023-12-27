@@ -1,3 +1,8 @@
+body {
+  margin: 0px;
+  background-color: black;
+}
+
 .App {
   text-align: center;
   background-color: black;
@@ -17,7 +22,7 @@
   font-style: italic;
 }
 
-.App-title-nav {
+.app-title-nav {
   color: black;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: magenta;
@@ -36,13 +41,14 @@
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: left;
   font-size: 2vmin;
   color: black;
   padding-left: 5vh;
   height: 10vh;
   border-radius: 55px;
   margin: 0 auto;
+  box-shadow: #28282d 0 -12px 6px inset;
 }
 
 .App-link {
@@ -58,34 +64,25 @@
   }
 }
 
-/* xxx */
-
-/* <!-- HTML !-->
-<button class="button-73" role="button">Button 73</button> */
+.about-me {
+  color: ghostwhite;
+}
 
 .section-title {
   display: none;
 }
 
-/* CSS */
 .section-button {
   appearance: none;
-  background-color: #1f1b1f;
+  background-color: #ffffff15;
   border-radius: 40em;
   border-style: none;
-  box-shadow: #111111 0 -12px 6px inset;
+  box-shadow: #28282d 0 -12px 6px inset;
   box-sizing: border-box;
-  color: #000000;
   cursor: default;
   display: inline-block;
-  font-family: -apple-system,sans-serif;
+  font-family: monospace;
   font-size: 1.2rem;
-  font-weight: 700;
-  letter-spacing: -.24px;
-  margin: 0;
-  outline: none;
-  padding: 1rem 1.3rem;
-  quotes: auto;
   text-align: center;
   text-decoration: none;
   transition: all .15s;
@@ -95,13 +92,75 @@
   margin: 2vw;
   height: 10vh;
   width: 10vh;
+  color: palevioletred;
 }
 
 .section-button:hover {
   .section-title {
     display: block;
+    border: 0px;
   }
 }
+
+.slidecontainer {
+  width: 15%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.spectrum-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 80%;
+  height: 1px;
+  border-radius: 50px;
+background: black;
+  outline: none;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.spectrum-slider:hover {
+  opacity: 1;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 1) 0%,
+    rgba(255, 154, 0, 1) 10%,
+    rgba(208, 222, 33, 1) 20%,
+    rgba(79, 220, 74, 1) 30%,
+    rgba(63, 218, 216, 1) 40%,
+    rgba(47, 201, 226, 1) 50%,
+    rgba(28, 127, 238, 1) 60%,
+    rgba(95, 21, 242, 1) 70%,
+    rgba(186, 12, 248, 1) 80%,
+    rgba(251, 7, 217, 1) 90%,
+    rgba(255, 0, 0, 1) 100%
+);
+}
+
+.spectrum-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  background: white;
+  box-shadow: gray 0 -2px 6px inset;
+  opacity: 0.8;
+  cursor: default;
+}
+
+.spectrum-slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #04AA6D;
+  cursor: default;
+}
+
+/* xxx */
 
 .button-73:hover {
   background-color: #FFC229;
@@ -120,10 +179,6 @@
   }
 }
 
-/* <!-- HTML !-->
-<button class="button-86" role="button">Button 86</button> */
-
-/* CSS */
 .button-86 {
   all: unset;
   width: 100px;

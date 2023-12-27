@@ -5,12 +5,17 @@
 </script>
 
 <div class="App-header">
-  <h1 class="App-title">
-    <code
-      >NO SUCH <span
-        class="App-title-nav"
-        on:click={() => ($title = color.toUpperCase())}>{$title}</span
-      ></code
-    >
-  </h1>
+  <div>
+    <h1 class="App-title">
+      <code
+        >NO SUCH <span
+          class="app-title-nav"
+          on:click={() => ($title = color.toUpperCase())}>{$title}</span
+        ></code
+      >
+    </h1>
+  </div>
+  <div class="slidecontainer">
+    <input type="range" min="1" max="100" value="0" class="spectrum-slider" />
+  </div>
 </div>

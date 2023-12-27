@@ -1,10 +1,16 @@
 <script>
+  import About from './About.svelte';
   import { title } from './stores.js';
   let sections = [
-    { heading: 'person', title: 'about' },
-    { heading: 'place', title: 'location' },
+    { heading: 'host', title: 'about' },
+    { heading: 'information', title: 'location' },
     { heading: 'thing', title: 'gallery' },
   ];
+  let currentSection;
+  function handleClick(section) {
+    $title = section.heading.toUpperCase();
+    currentSection = section.title;
+  }
 </script>
 
 {#each sections as section}
@@ -13,12 +19,16 @@
       class="section-button"
       name="sections"
       value={section.heading}
-      on:click={() => ($title = section.heading.toUpperCase())}
+      on:click={() => handleClick(section)}
     >
       <div class="section-title">{section.title}</div>
     </button>
   </label>
 {/each}
+
+{#if currentSection == 'about'}
+  <About />
+{/if}
 
 <div class="App-home">
   <div>
