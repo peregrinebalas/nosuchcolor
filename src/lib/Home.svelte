@@ -28,7 +28,7 @@
 
 {#if currentSection == 'about'}
   <About />
-{/if}
+{:else if currentSection == 'location'}{/if}
 
 <div class="App-home">
   <div>

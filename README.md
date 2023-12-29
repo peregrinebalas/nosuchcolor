@@ -28,11 +28,13 @@ no such...
   - do the thing? i.e. code
 - host (?)
 - directory (?)
-  - file
+- file
 - part
 - message
 - user
 - element
+- luck
+- function
 
 ## Technologies
 
