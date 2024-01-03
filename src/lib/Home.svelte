@@ -1,10 +1,27 @@
 <script>
   import About from './About.svelte';
   import { title } from './stores.js';
-  let sections = [
-    { heading: 'host', title: 'about' },
-    { heading: 'information', title: 'location' },
-    { heading: 'thing', title: 'gallery' },
+  let links = [
+    {
+      heading: 'source',
+      title: 'GitHub',
+      url: 'https://github.com/peregrinebalas',
+    },
+    {
+      heading: 'job',
+      title: 'LinkedIn',
+      url: 'https://www.linkedin.com/in/peregrine-balas/',
+    },
+    {
+      heading: 'image',
+      title: 'Instagram',
+      url: 'https://www.instagram.com/peregrinebalas/',
+    },
+    {
+      heading: 'user',
+      title: 'Facebook',
+      url: 'https://www.facebook.com/peregrine.balas',
+    },
   ];
   let currentSection;
   function handleClick(section) {
@@ -13,29 +30,50 @@
   }
 </script>
 
-{#each sections as section}
+<!-- {#each sections as section}
   <label>
     <button
       class="section-button"
       name="sections"
       value={section.heading}
-      on:click={() => handleClick(section)}
+      on:click=
     >
       <div class="section-title">{section.title}</div>
     </button>
   </label>
-{/each}
+{/each} -->
 
-{#if currentSection == 'about'}
+<!-- {#if currentSection == 'about'}
   <About />
-{:else if currentSection == 'location'}{/if}
+{:else if currentSection == 'location'}
+  <
+{/if} -->
 
 <div class="App-home">
-  <div>
+  {#each links as link}
+    <label>
+      <!-- <button class="section-button" name="sections" value={section.heading}>
+        <div class="section-title">{section.title}</div>
+      </button> -->
+      <a
+        class="App-link"
+        href={link.url}
+        rel="noopener noreferrer"
+        on:mouseover={() => handleClick(link)}
+        on:mouseleave={() => handleClick({ heading: 'color' })}
+      >
+        {link.title}
+      </a>
+    </label>
+  {/each}
+</div>
+
+<!-- <div>
     <a
       class="App-link"
-      href="https://github.com/peregrinebalas"
+      href=
       rel="noopener noreferrer"
+      
     >
       GitHub
     </a>
@@ -43,7 +81,7 @@
   <div>
     <a
       class="App-link"
-      href="https://www.linkedin.com/in/peregrine-balas/"
+      href=
       rel="noopener noreferrer"
     >
       LinkedIn
@@ -52,19 +90,10 @@
   <div>
     <a
       class="App-link"
-      href="https://www.instagram.com/peregram_/"
+      href=
       rel="noopener noreferrer"
     >
       Instagram
     </a>
   </div>
-  <div>
-    <a
-      class="App-link"
-      href="https://www.facebook.com/peregrine.balas"
-      rel="noopener noreferrer"
-    >
-      Facebook
-    </a>
-  </div>
-</div>
+  -->
