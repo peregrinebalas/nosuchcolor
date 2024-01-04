@@ -67,33 +67,3 @@
     </label>
   {/each}
 </div>
-
-<!-- <div>
-    <a
-      class="App-link"
-      href=
-      rel="noopener noreferrer"
-      
-    >
-      GitHub
-    </a>
-  </div>
-  <div>
-    <a
-      class="App-link"
-      href=
-      rel="noopener noreferrer"
-    >
-      LinkedIn
-    </a>
-  </div>
-  <div>
-    <a
-      class="App-link"
-      href=
-      rel="noopener noreferrer"
-    >
-      Instagram
-    </a>
-  </div>
-  -->
