@@ -53,6 +53,8 @@ body {
 
 .App-link {
   color: #ff00cc;
+  font-family: monospace;
+  font-size: 1.2rem;
 }
 
 .about-me {

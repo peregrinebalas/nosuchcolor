@@ -24,30 +24,11 @@
     },
   ];
   let currentSection;
-  function handleClick(section) {
-    $title = section.heading.toUpperCase();
-    currentSection = section.title;
+  function handleClick(link) {
+    $title = link.heading.toUpperCase();
+    currentSection = link.title;
   }
 </script>
-
-<!-- {#each sections as section}
-  <label>
-    <button
-      class="section-button"
-      name="sections"
-      value={section.heading}
-      on:click=
-    >
-      <div class="section-title">{section.title}</div>
-    </button>
-  </label>
-{/each} -->
-
-<!-- {#if currentSection == 'about'}
-  <About />
-{:else if currentSection == 'location'}
-  <
-{/if} -->
 
 <div class="App-home">
   {#each links as link}
@@ -65,5 +46,6 @@
         {link.title}
       </a>
     </label>
+    <div></div>
   {/each}
 </div>
