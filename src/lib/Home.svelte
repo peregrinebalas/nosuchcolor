@@ -46,6 +46,5 @@
         {link.title}
       </a>
     </label>
-    <div></div>
   {/each}
 </div>

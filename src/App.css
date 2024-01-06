@@ -55,6 +55,8 @@ body {
   color: #ff00cc;
   font-family: monospace;
   font-size: 1.2rem;
+  margin: 50px;
+  display: block;
 }
 
 .about-me {
