@@ -1,11 +1,94 @@
 body {
   margin: 0px;
-  background-color: midnightblue;
+  /* background-color: #1C1F33; */
+  background-size: 5px 15px;
+  background-width: 20vw;
+  background: repeating-linear-gradient(
+    45deg,
+    #1C0F13,
+    #1C0F13 6px,
+    #1C0F13 6px,
+    #211A1D 6px,
+    #211A1D 6px,
+    #211A1D 12px
+  );
 }
+
+body {
+  margin: auto;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow: auto;
+  background: linear-gradient(45deg, #1C1F33 3%, #1C0F13 38%, #211A1D 68%, #EDEBD7 99%);
+  animation: gradient 40s ease infinite;
+  background-size: 400% 400%;
+  background-attachment: fixed;
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 0%;
+  }
+  50% {
+      background-position: 100% 100%;
+  }
+  100% {
+      background-position: 0% 0%;
+  }
+}
+
+.wave {
+  background: rgb(188 105 170 / 2%);
+  border-radius: 1000% 1000% 0 0;
+  position: fixed;
+  width: 200%;
+  height: 20vh;
+  animation: wave 60s -3s linear infinite;
+  transform: translate3d(0, 0, 0);
+  opacity: 0.4;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+  bottom: -3.55em;
+  animation: wave 38s linear reverse infinite;
+  opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+  bottom: -2.5em;
+  animation: wave 20s -1s reverse infinite;
+  opacity: 0.9;
+}
+
+@keyframes wave {
+  2% {
+      transform: translateX(1);
+  }
+
+  25% {
+      transform: translateX(-25%);
+  }
+
+  50% {
+      transform: translateX(-50%);
+  }
+
+  75% {
+      transform: translateX(-25%);
+  }
+
+  100% {
+      transform: translateX(1);
+  }
+}
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxx */
 
 .App {
   text-align: center;
-  background-color: #1f1a1f;
+  background: transparent;
   height: 100vh;
   padding: 2vh;
 }
@@ -17,15 +100,15 @@ body {
 
 .App-title {
   /* font-weight: bold; */
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: #F8F0FB;
   font-style: italic;
 }
 
 .app-title-nav {
-  color: black;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: magenta;
+  color: #211A1D;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: #E326D6;
   cursor: default;
 }
 
@@ -36,23 +119,23 @@ body {
 }
 
 .App-header {
-  background-color: #1f1b1f;
+  background-color: #211A1D;
   min-height: 10vh;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: left;
   font-size: 2vmin;
-  color: black;
+  color: #211A1D;
   padding-left: 5vh;
   height: 10vh;
   border-radius: 55px;
   margin: 0 auto;
-  box-shadow: #28282d 0 -12px 6px inset;
+  box-shadow: #1C0F13 2px 8px 12px;
 }
 
 .App-link {
-  color: #ff00cc;
+  color: #E326D6;
   font-family: monospace;
   font-size: 1.2rem;
   margin: 50px;
