@@ -1,24 +1,8 @@
 body {
-  margin: 0px;
-  /* background-color: #1C1F33; */
-  background-size: 5px 15px;
-  background-width: 20vw;
-  background: repeating-linear-gradient(
-    45deg,
-    #1C0F13,
-    #1C0F13 6px,
-    #1C0F13 6px,
-    #211A1D 6px,
-    #211A1D 6px,
-    #211A1D 12px
-  );
-}
-
-body {
   margin: auto;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   overflow: auto;
-  background: linear-gradient(45deg, #1C1F33 3%, #1C0F13 38%, #211A1D 68%, #EDEBD7 99%);
+  background: linear-gradient(38deg, #1C1F33 3%, #1C0F13 38%, #010012 68%, #BBBDF6 99%);
   animation: gradient 40s ease infinite;
   background-size: 400% 400%;
   background-attachment: fixed;
@@ -48,6 +32,16 @@ body {
   bottom: 0;
   left: 0;
   z-index: -1;
+}
+
+/* .right-hand {
+  height: 50vh;
+  width: 50vw;
+}
+*/
+.left-hand {
+  /* height: 50vh;
+  width: 50vw; */
 }
 
 .wave:nth-of-type(2) {
@@ -108,7 +102,7 @@ body {
 .app-title-nav {
   color: #211A1D;
   -webkit-text-stroke-width: 1.5px;
-  -webkit-text-stroke-color: #E326D6;
+  -webkit-text-stroke-color: #E84ADD;
   cursor: default;
 }
 
@@ -134,8 +128,17 @@ body {
   box-shadow: #1C0F13 2px 8px 12px;
 }
 
+.App-home {
+  display: flex;
+  align-items: flex-start;
+}
+
+.App-links {
+  width: 60vw;
+}
+
 .App-link {
-  color: #E326D6;
+  color: #E84ADD;
   font-family: monospace;
   font-size: 1.2rem;
   margin: 50px;

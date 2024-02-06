@@ -1,6 +1,8 @@
 <script>
   import About from './About.svelte';
   import { title } from './stores.js';
+  import Right from '$lib/assets/right-hand.png';
+  import Left from '$lib/assets/left-hand.png';
   let links = [
     {
       heading: 'source',
@@ -31,20 +33,27 @@
 </script>
 
 <div class="App-home">
-  {#each links as link}
-    <label>
-      <!-- <button class="section-button" name="sections" value={section.heading}>
+  <div>
+    <div class="App-links">
+      {#each links as link}
+        <label>
+          <!-- <button class="section-button" name="sections" value={section.heading}>
         <div class="section-title">{section.title}</div>
       </button> -->
-      <a
-        class="App-link"
-        href={link.url}
-        rel="noopener noreferrer"
-        on:mouseover={() => handleClick(link)}
-        on:mouseleave={() => handleClick({ heading: 'color' })}
-      >
-        {link.title}
-      </a>
-    </label>
-  {/each}
+          <a
+            class="App-link"
+            href={link.url}
+            rel="noopener noreferrer"
+            on:mouseover={() => handleClick(link)}
+            on:mouseleave={() => handleClick({ heading: 'color' })}
+          >
+            {link.title}
+          </a>
+        </label>
+      {/each}
+    </div>
+    <img class="right-hand" src={Right} alt="right hand" />
+  </div>
+
+  <img class="left-hand" src={Left} alt="left hand" />
 </div>
