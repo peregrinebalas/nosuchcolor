@@ -7,11 +7,9 @@
 <div class="App-header">
   <div>
     <h1 class="App-title">
-      <code>
-        NO SUCH <span
-          class="app-title-nav"
-          on:click={() => ($title = color.toUpperCase())}>{$title}</span
-        ></code
+      NO SUCH <span
+        class="app-title-nav"
+        on:click={() => ($title = color.toUpperCase())}>{$title}</span
       >
     </h1>
   </div>

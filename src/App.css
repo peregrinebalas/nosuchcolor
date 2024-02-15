@@ -1,11 +1,26 @@
 body {
   margin: auto;
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  /* font-family: -apple-system, BlinkMacSystemFont, sans-serif; */
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
   overflow: auto;
-  background: linear-gradient(38deg, #1C1F33 3%, #1C0F13 38%, #010012 68%, #BBBDF6 99%);
-  animation: gradient 40s ease infinite;
+  /* background: #1C0F13; */
+  background: repeating-linear-gradient(180deg, #1C1F33 0px, #1C1F33 5px, #1C1F33 5px, #010012 5px, #010012 10px);
+  /* animation: gradient 40s ease infinite; */
   background-size: 400% 400%;
   background-attachment: fixed;
+}
+
+
+.box {
+  background-color: #FF1500;
+  --mask:
+    radial-gradient(17.40px at 24.60px 50%,#000 99%,#0000 101%) 0 calc(50% - 24px)/51% 48px repeat-y,
+    radial-gradient(17.40px at -12.6px 50%,#0000 99%,#000 101%) 12px 50%/calc(51% - 12px) 48px repeat-y,
+		radial-gradient(17.40px at calc(100% - 24.60px) 50%,#000 99%,#0000 101%) 100% calc(50% - 24px)/51% 48px repeat-y,
+    radial-gradient(17.40px at calc(100% + 12.60px) 50%,#0000 99%,#000 101%) calc(100% - 12px) 50%/calc(51% - 12px) 48px repeat-y;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
 }
 
 @keyframes gradient {
@@ -34,14 +49,17 @@ body {
   z-index: -1;
 }
 
-/* .right-hand {
-  height: 50vh;
-  width: 50vw;
+.right-hand {
+  /* height: 50vh;
+  width: 50vw; */
+  animation: wave 55s -2s linear infinite;
+
 }
-*/
+
 .left-hand {
   /* height: 50vh;
   width: 50vw; */
+  animation: wave 65s -3s linear infinite;
 }
 
 .wave:nth-of-type(2) {
@@ -62,15 +80,15 @@ body {
   }
 
   25% {
-      transform: translateX(-25%);
+      transform: translateX(-15%);
   }
 
   50% {
-      transform: translateX(-50%);
+      transform: translateX(-30%);
   }
 
   75% {
-      transform: translateX(-25%);
+      transform: translateX(-15%);
   }
 
   100% {
@@ -84,7 +102,7 @@ body {
   text-align: center;
   background: transparent;
   height: 100vh;
-  padding: 2vh;
+  /* padding: 2vh; */
 }
 
 .App-logo {
@@ -93,15 +111,16 @@ body {
 }
 
 .App-title {
-  /* font-weight: bold; */
-  -webkit-text-stroke-width: 1.5px;
+  font-weight: lighter;
+  /* -webkit-text-stroke-width: 1.5px; */
   -webkit-text-stroke-color: #F8F0FB;
   font-style: italic;
 }
 
 .app-title-nav {
-  color: #211A1D;
-  -webkit-text-stroke-width: 1.5px;
+  /* color: #211A1D; */
+  color: #6200B3;
+  /* -webkit-text-stroke-width: 1.5px; */
   -webkit-text-stroke-color: #E84ADD;
   cursor: default;
 }
@@ -114,17 +133,18 @@ body {
 
 .App-header {
   background-color: #211A1D;
-  min-height: 10vh;
+  min-height: 15vh;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: left;
-  font-size: 2vmin;
-  color: #211A1D;
-  padding-left: 5vh;
-  height: 10vh;
-  border-radius: 55px;
-  margin: 0 auto;
+  font-size: 3vmin;
+  /* color: #211A1D; */
+  color: #EAF4D3;
+  padding: 0vh 0vh 0vh 5vh;
+  height: 15vh;
+  /* border-radius: 55px; */
+  margin: 0;
   box-shadow: #1C0F13 2px 8px 12px;
 }
 
@@ -138,8 +158,11 @@ body {
 }
 
 .App-link {
-  color: #E84ADD;
-  font-family: monospace;
+  /* color: #E84ADD; */
+  color: black;
+  text-decoration: none;
+  /* font-family: monospace; */
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 1.2rem;
   margin: 50px;
   display: block;
@@ -162,7 +185,8 @@ body {
   box-sizing: border-box;
   cursor: default;
   display: inline-block;
-  font-family: monospace;
+  /* font-family: monospace; */
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 1.2rem;
   text-align: center;
   text-decoration: none;

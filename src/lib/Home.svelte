@@ -33,7 +33,7 @@
 </script>
 
 <div class="App-home">
-  <div>
+  <div class="box">
     <div class="App-links">
       {#each links as link}
         <label>
