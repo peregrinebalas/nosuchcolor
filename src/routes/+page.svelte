@@ -4,11 +4,6 @@
 </script>
 
 <div class="App">
-  <div>
-    <div class="wave"></div>
-    <div class="wave"></div>
-    <div class="wave"></div>
-  </div>
   <Header />
   <Home />
 </div>
