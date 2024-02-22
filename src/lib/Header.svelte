@@ -13,7 +13,7 @@
       >
     </h1>
   </div>
-  <div class="slidecontainer">
+  <!-- <div class="slidecontainer">
     <input type="range" min="1" max="100" value="0" class="spectrum-slider" />
-  </div>
+  </div> -->
 </div>

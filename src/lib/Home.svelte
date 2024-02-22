@@ -48,14 +48,16 @@
 </script>
 
 <div class="App-home">
+  <div class="glove">
+    <img class="right-hand" src={Right} alt="right hand" />
+  </div>
+
   <div class="box">
+    <div></div>
     <div class="App-links">
       {#each links as link}
         <label>
-          <!-- <button class="section-button" name="sections" value={section.heading}>
-        <div class="section-title">{section.title}</div>
-      </button> -->
-          <span>
+          <section>
             <a
               class="App-link"
               href={link.url}
@@ -65,12 +67,14 @@
             >
               {link.title}
             </a>
-          </span></label
-        >
+          </section>
+        </label>
       {/each}
     </div>
-    <img class="right-hand" src={Right} alt="right hand" />
+    <div></div>
   </div>
 
-  <img class="left-hand" src={Left} alt="left hand" />
+  <div class="glove">
+    <img class="left-hand" src={Left} alt="left hand" />
+  </div>
 </div>

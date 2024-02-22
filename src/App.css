@@ -1,22 +1,37 @@
 body {
   margin: auto;
-  /* font-family: -apple-system, BlinkMacSystemFont, sans-serif; */
   font-family: Georgia, 'Times New Roman', Times, serif;
-
-  overflow: auto;
+  overflow:hidden;
   /* background: #1C0F13; */
   background: repeating-linear-gradient(180deg, #1C1F33 0px, #1C1F33 5px, #1C1F33 5px, #010012 5px, #010012 10px);
-  /* animation: gradient 40s ease infinite; */
-  background-size: 400% 400%;
-  background-attachment: fixed;
 }
 
 label {
   width: 10vw;
 }
+
+.glove {
+  width: 0px;
+  overflow: visible;
+  z-index: 5;
+}
+
 .box {
-  margin-left: 16vw;
-  background-color: #FF1500;
+  /* background-color: #FF1500;
+  background-color: #F2D0A9;
+  background-color: #D86FA3;
+  background-color: #AF1B3F;
+  background-color: #D4214E;
+  background-color: #DE2B58; */
+  z-index: 1;
+  background: radial-gradient(#D86FA3, #DE2B58);
+  display: flex;
+  width: 60vw;
+  height: max-content;
+    justify-content: center;
+  align-items: center;
+  height: 85vh;
+
   --mask:
     radial-gradient(17.40px at 24.60px 50%,#000 99%,#0000 101%) 0 calc(50% - 24px)/51% 48px repeat-y,
     radial-gradient(17.40px at -12.6px 50%,#0000 99%,#000 101%) 12px 50%/calc(51% - 12px) 48px repeat-y,
@@ -59,7 +74,9 @@ label {
 
 .app-title-nav {
   /* color: #211A1D; */
-  color: #6200B3;
+  /* color: #6200B3; */
+  color: #F9B9F2;
+  color: #D86FA3;
   /* -webkit-text-stroke-width: 1.5px; */
   -webkit-text-stroke-color: #E84ADD;
   cursor: default;
@@ -67,7 +84,9 @@ label {
 
 .App-home {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
+  columns: 3;
 }
 
 .App-links {
@@ -83,8 +102,11 @@ label {
   font-weight: light;
   font-style: italic;
   font-size: 3.3rem;
-  margin: 50px;
+  margin: 80px;
   display: block;
+  border-color: transparent;
+  border-style: double;
+  border-width: 15px;
 }
 
 .App-link:hover {
@@ -94,15 +116,12 @@ label {
 }
 
 .right-hand {
-  /* height: 50vh;
-  width: 50vw; */
+  margin-top: 20vh;
   animation: wave 55s -2s linear infinite;
   z-index: 5;
 }
 
 .left-hand {
-  /* height: 50vh;
-  width: 50vw; */
   animation: wave 65s -3s linear infinite;
   z-index: 4;
 }
