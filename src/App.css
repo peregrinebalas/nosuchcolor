@@ -4,6 +4,7 @@ body {
   overflow:hidden;
   /* background: #1C0F13; */
   background: repeating-linear-gradient(180deg, #1C1F33 0px, #1C1F33 5px, #1C1F33 5px, #010012 5px, #010012 10px);
+  animation: shifting-lines .5s infinite;
 }
 
 label {
@@ -126,15 +127,15 @@ label {
   z-index: 4;
 }
 
-@keyframes gradient {
+@keyframes shifting-lines {
   0% {
-      background-position: 0% 0%;
+    background: repeating-linear-gradient(180deg, #010012 0px, #010012 5px, #010012 5px, #1C1F33 5px, #1C1F33 10px);
   }
   50% {
-      background-position: 100% 100%;
+    background: repeating-linear-gradient(180deg, #1C1F33 0px, #1C1F33 5px, #1C1F33 5px, #010012 5px, #010012 10px);
   }
   100% {
-      background-position: 0% 0%;
+    background: repeating-linear-gradient(180deg, #010012 0px, #010012 5px, #010012 5px, #1C1F33 5px, #1C1F33 10px);
   }
 }
 
