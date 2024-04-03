@@ -73,7 +73,7 @@ body {
 
 }
 
-.App-links {
+.App-entries {
   /* width: 60vw; */
 }
 
@@ -91,7 +91,11 @@ body {
   border-width: 15px; */
 }
 
-.App-link:hover {
+#App-entry-active {
+  color: lightgray;
+}
+
+.App-entry:hover {
   color: lightgray;
   /* border-style: double;
   border-width: 15px; */
