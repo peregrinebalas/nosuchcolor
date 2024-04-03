@@ -1,70 +1,41 @@
 <script>
   import About from './About.svelte';
+  import Contact from './Contact.svelte';
+  import Entry from './Entry.svelte';
+  import Socials from './Socials.svelte';
   import Right from '$lib/assets/right-hand.png';
   import Left from '$lib/assets/left-hand.png';
   let entries = [
     {
       component: About,
-      props: {
-        heading: 'information',
-        title: 'About',
-        url: 'https://github.com/peregrinebalas',
+      heading: 'information',
+      title: 'About',
+    },
+    {
+      component: Socials,
+      heading: 'host',
+      title: 'Socials',
+      urls: {
+        github: 'https://github.com/peregrinebalas',
+        linkedin: 'https://www.linkedin.com/in/peregrine-balas/',
+        instagram: 'https://www.instagram.com/peregrinebalas/',
+        facebook: 'https://www.facebook.com/peregrine.balas',
       },
     },
     {
-      component: About,
-      props: {
-        heading: 'host',
-        title: 'Socials',
-        url: 'https://www.linkedin.com/in/peregrine-balas/',
-      },
+      component: Contact,
+      heading: 'message',
+      title: 'Contact',
     },
-    {
-      component: About,
-      props: {
-        heading: 'message',
-        title: 'Contact',
-        url: 'https://www.instagram.com/peregrinebalas/',
-      },
-    },
-    // {
-    //   heading: 'source',
-    //   title: 'GitHub',
-    //   url: 'https://github.com/peregrinebalas',
-    // },
-    // {
-    //   heading: 'job',
-    //   title: 'LinkedIn',
-    //   url: 'https://www.linkedin.com/in/peregrine-balas/',
-    // },
-    // {
-    //   heading: 'image',
-    //   title: 'Instagram',
-    //   url: 'https://www.instagram.com/peregrinebalas/',
-    // },
-    // {
-    //   heading: 'user',
-    //   title: 'Facebook',
-    //   url: 'https://www.facebook.com/peregrine.balas',
-    // },
   ];
-  // let currentSection;
-  // function handleMouseOver(link) {
-  //   $title = link.heading.toUpperCase();
-  //   currentSection = link.title;
-  // }
-  // function handleMouseLeave() {
-  //   $title = 'COLOR';
-  //   currentSection = null;
-  // }
 </script>
 
 <div class="App-home">
   <div class="box">
     <div class="App-entries">
-      {#each entries as obj}
+      {#each entries as entry}
         <section>
-          <svelte:component this={obj.component} props={obj.props} />
+          <Entry {entry} />
         </section>
       {/each}
     </div>
