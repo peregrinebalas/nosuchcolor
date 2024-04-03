@@ -1,10 +1,11 @@
-<script lang="ts">
-  export let urls: Array<String>;
+<script>
+  export let props;
 </script>
 
 <div>
-  <p class="about-me">test</p>
-  {#each urls as url}
-    <span>{url}</span>
+  {#each props as link}
+    <div>
+      <a class="about-me" href={link.url}>{link.title}</a>
+    </div>
   {/each}
 </div>

@@ -15,12 +15,18 @@
       component: Socials,
       heading: 'host',
       title: 'Socials',
-      urls: {
-        github: 'https://github.com/peregrinebalas',
-        linkedin: 'https://www.linkedin.com/in/peregrine-balas/',
-        instagram: 'https://www.instagram.com/peregrinebalas/',
-        facebook: 'https://www.facebook.com/peregrine.balas',
-      },
+      props: [
+        { title: 'github', url: 'https://github.com/peregrinebalas' },
+        {
+          title: 'linkedin',
+          url: 'https://www.linkedin.com/in/peregrine-balas/',
+        },
+        {
+          title: 'instagram',
+          url: 'https://www.instagram.com/peregrinebalas/',
+        },
+        { title: 'facebook', url: 'https://www.facebook.com/peregrine.balas' },
+      ],
     },
     {
       component: Contact,
