@@ -7,6 +7,7 @@
     {
       heading: 'information',
       title: 'About',
+      content: '',
       url: 'https://github.com/peregrinebalas',
     },
     {
@@ -41,29 +42,28 @@
     // },
   ];
   let currentSection;
-  function handleClick(link) {
+  function handleMouseOver(link) {
     $title = link.heading.toUpperCase();
     currentSection = link.title;
+  }
+  function handleMouseLeave() {
+    $title = 'COLOR';
+    currentSection = null;
   }
 </script>
 
 <div class="App-home">
-  <div class="glove">
-    <img class="right-hand" src={Right} alt="right hand" />
-  </div>
-
   <div class="box">
-    <div></div>
     <div class="App-links">
       {#each links as link}
         <label>
           <section>
             <a
-              class="App-link"
+              class="App-entry"
               href={link.url}
               rel="noopener noreferrer"
-              on:mouseover={() => handleClick(link)}
-              on:mouseleave={() => handleClick({ heading: 'color' })}
+              on:mouseover={() => handleMouseOver(link)}
+              on:mouseleave={() => handleMouseLeave()}
             >
               {link.title}
             </a>
@@ -71,10 +71,11 @@
         </label>
       {/each}
     </div>
-    <div></div>
   </div>
-
-  <div class="glove">
+  <div class="glove" id="right-glove">
+    <img class="right-hand" src={Right} alt="right hand" />
+  </div>
+  <div class="glove" id="left-glove">
     <img class="left-hand" src={Left} alt="left hand" />
   </div>
 </div>
