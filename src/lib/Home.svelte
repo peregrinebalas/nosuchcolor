@@ -14,7 +14,7 @@
     {
       component: Socials,
       heading: 'host',
-      title: 'Socials',
+      title: 'Links',
       props: [
         { title: 'github', url: 'https://github.com/peregrinebalas' },
         {
@@ -38,13 +38,13 @@
 
 <div class="App-home">
   <div class="box">
-    <div class="App-entries">
+    <ul class="App-entries">
       {#each entries as entry}
-        <section>
+        <li>
           <Entry {entry} />
-        </section>
+        </li>
       {/each}
-    </div>
+    </ul>
   </div>
   <div class="glove" id="right-glove">
     <img class="right-hand" src={Right} alt="right hand" />

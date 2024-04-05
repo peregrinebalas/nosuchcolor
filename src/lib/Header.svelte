@@ -5,7 +5,7 @@
 </script>
 
 <div class="App-header">
-  <div>
+  <div class="app-title-div">
     <h1 class="App-title">
       NO SUCH <span
         class="app-title-nav"
@@ -13,7 +13,9 @@
       >
     </h1>
   </div>
-  <!-- <div class="slidecontainer">
-    <input type="range" min="1" max="100" value="0" class="spectrum-slider" />
-  </div> -->
+</div>
+<div class="header-svg-div">
+  <svg viewBox="0 0 100 5">
+    <line x1="0" y1="4" x2="100" y2="1" stroke="lightgray" stroke-width="0.2" />
+  </svg>
 </div>
