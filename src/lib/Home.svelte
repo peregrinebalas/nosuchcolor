@@ -3,6 +3,7 @@
   import Contact from './Contact.svelte';
   import Entry from './Entry.svelte';
   import Links from './Links.svelte';
+  import Party from './Party.svelte';
   import Right from '$lib/assets/right-hand.png';
   import Left from '$lib/assets/left-hand.png';
   let entries = [
@@ -15,6 +16,11 @@
       component: Links,
       heading: 'host',
       title: 'Links',
+    },
+    {
+      component: Party,
+      heading: 'event',
+      title: 'Parties',
     },
     {
       component: Contact,
