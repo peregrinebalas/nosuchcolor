@@ -1,9 +1,15 @@
+<script>
+  import portrait from '$lib/assets/pink-portrait.jpg';
+</script>
+
 <p class="about-me">
   "I am not sure that I exist, actually. I am all the writers that I have read,
   all the people that I have met, all the women that I have loved; all the
   cities I have visited."
   <span>--Jorge Luis Borges</span>
 </p>
+
+<img class="portrait" src={portrait} alt="headshot" />
 
 <p class="about-me">
   I was raised by a mathematician and an environmentalist. They recognized I

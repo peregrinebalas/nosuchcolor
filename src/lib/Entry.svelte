@@ -19,7 +19,6 @@
   }
 </script>
 
-<!-- <img src="" alt="headshot" /> -->
 <div>
   <span
     id={visible === true ? 'App-entry-active' : ''}
