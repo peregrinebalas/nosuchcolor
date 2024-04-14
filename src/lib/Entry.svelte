@@ -20,7 +20,7 @@
 </script>
 
 <div>
-  <span
+  <div
     id={visible === true ? 'App-entry-active' : ''}
     class="App-entry"
     on:mouseover={() => handleMouseOver(entry)}
@@ -28,7 +28,7 @@
     on:click={() => toggleVisible()}
   >
     {entry.title}
-  </span>
+  </div>
 
   {#if visible}
     <svelte:component this={entry.component} />

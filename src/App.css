@@ -35,7 +35,7 @@ body {
 }
 
 .App {
-  text-align: center;
+  /* text-align: center; */
   background: transparent;
   height: 100vh;
 }
@@ -84,6 +84,7 @@ body {
 }
 
 .App-entries {
+  justify-content: left;
   /* width: 60vw; */
 }
 
