@@ -182,8 +182,9 @@ body {
   font-family: "Courier New", Courier, monospace;
 }
 
-.socials {
-
+.entry {
+  height: 20vh;
+  overflow: scroll;
 }
 
 .section-title {

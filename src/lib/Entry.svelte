@@ -31,6 +31,8 @@
   </div>
 
   {#if visible}
-    <svelte:component this={entry.component} />
+    <div class="entry">
+      <svelte:component this={entry.component} />
+    </div>
   {/if}
 </div>
