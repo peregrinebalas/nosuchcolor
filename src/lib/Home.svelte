@@ -9,22 +9,22 @@
   let entries = [
     {
       component: About,
-      heading: 'information',
+      heading: 'INFORMATION',
       title: 'About',
     },
     {
       component: Links,
-      heading: 'host',
+      heading: 'HOST',
       title: 'Links',
     },
     {
       component: Party,
-      heading: 'event',
+      heading: 'EVENT',
       title: 'Parties',
     },
     {
       component: Contact,
-      heading: 'message',
+      heading: 'MESSAGE',
       title: 'Contact',
     },
   ];

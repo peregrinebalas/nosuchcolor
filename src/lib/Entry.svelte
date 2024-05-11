@@ -1,21 +1,25 @@
 <script>
-  import { title } from './stores.js';
+  import { title, titleDisplay, currentSection } from './stores.js';
   export let entry;
 
   let visible = false;
-  let currentSection;
 
   function toggleVisible() {
     visible = !visible;
   }
 
   function handleMouseOver(entry) {
-    $title = entry.heading.toUpperCase();
-    currentSection = entry.title;
+    $titleDisplay = false;
+    console.log('over');
+    // if ($title !== entry.heading) setHeader();
+    $currentSection = entry;
   }
+
   function handleMouseLeave() {
-    $title = 'COLOR';
-    currentSection = null;
+    if (!visible) {
+      $titleDisplay = false;
+      $currentSection = null;
+    }
   }
 </script>
 
