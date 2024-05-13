@@ -10,8 +10,6 @@
 
   function handleMouseOver(entry) {
     $titleDisplay = false;
-    console.log('over');
-    // if ($title !== entry.heading) setHeader();
     $currentSection = entry;
   }
 

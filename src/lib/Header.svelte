@@ -24,16 +24,22 @@
         const i = Math.trunc(text.length * t);
         node.textContent = text.slice(0, i);
         if (i === 0) {
-          console.log($currentSection);
           if ($currentSection) {
             $title = $currentSection.heading;
           } else {
             $title = 'COLOR';
           }
-          $titleDisplay = true;
         }
       },
     };
+  }
+
+  function setTitle() {
+    if ($currentSection) {
+      $title = $currentSection.heading;
+    } else {
+      $title = 'COLOR';
+    }
   }
 </script>
 
