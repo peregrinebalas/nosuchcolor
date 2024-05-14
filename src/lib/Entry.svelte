@@ -9,8 +9,10 @@
   }
 
   function handleMouseOver(entry) {
-    $titleDisplay = false;
-    $currentSection = entry;
+    if ($currentSection !== entry) {
+      $titleDisplay = false;
+      $currentSection = entry;
+    }
   }
 
   function handleMouseLeave() {

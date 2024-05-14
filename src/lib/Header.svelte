@@ -4,27 +4,14 @@
 
   let color = 'color';
 
-  $: $title, run();
+  $: $title, displayTitle();
 
-  function run() {
-    console.log($title, 'title');
+  function displayTitle() {
     $titleDisplay = true;
-    console.log($titleDisplay);
   }
 
   function typewriter(node, { speed = 1 }) {
-    // const valid =
-    //   node.childNodes.length === 1 &&
-    //   node.childNodes[0].nodeType === Node.TEXT_NODE;
-
-    // if (!valid) {
-    //   throw new Error(
-    //     `This transition only works on elements with a single text node child`
-    //   );
-    // }
-
     let text = node.textContent;
-    console.log('text', text);
     const duration = text.length / (speed * 0.01);
 
     return {
@@ -34,15 +21,12 @@
         node.textContent = text.slice(0, i);
         if (i === 0) {
           if ($currentSection) {
-            console.log($title, 'title');
             $title = $currentSection?.heading;
-            console.log($title, 'title');
           } else {
             $title = 'COLOR';
           }
 
           text = $title;
-          console.log('text', text);
         }
       },
     };
