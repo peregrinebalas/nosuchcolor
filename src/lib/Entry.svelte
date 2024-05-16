@@ -10,6 +10,8 @@
 
   function handleMouseOver(entry) {
     if ($currentSection !== entry) {
+      console.log('handleMouseOver $titleDisplay', $titleDisplay);
+      console.log('handleMouseOver $currentSection', $currentSection);
       $titleDisplay = false;
       $currentSection = entry;
     }
