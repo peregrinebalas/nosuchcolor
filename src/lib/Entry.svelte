@@ -9,18 +9,25 @@
   }
 
   function handleMouseOver(entry) {
-    if ($currentSection !== entry) {
+    console.log('handleMouseOver entry', entry);
+    console.log('handleMouseOver $currentSection', $currentSection);
+    if (!titleDisplay) {
+      $currentSection = entry;
+    } else if ($currentSection !== entry) {
       console.log('handleMouseOver $titleDisplay', $titleDisplay);
-      console.log('handleMouseOver $currentSection', $currentSection);
       $titleDisplay = false;
       $currentSection = entry;
+    } else {
+      $titleDisplay = true;
     }
   }
 
   function handleMouseLeave() {
-    if (!visible) {
+    if (!$titleDisplay) {
+      $titleDisplay = true;
+    } else if (!visible) {
       $titleDisplay = false;
-      $currentSection = null;
+      $currentSection = { heading: 'COLOR' };
     }
   }
 </script>

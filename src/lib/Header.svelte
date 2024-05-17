@@ -20,11 +20,11 @@
         const i = Math.trunc(text.length * t);
         node.textContent = text.slice(0, i);
         if (i === 0) {
-          if ($currentSection) {
-            $title = $currentSection?.heading;
-          } else {
-            $title = 'COLOR';
-          }
+          // if ($currentSection) {
+          $title = $currentSection?.heading;
+          // } else {
+          //   $title = 'COLOR';
+          // }
 
           text = $title;
         }
