@@ -23,7 +23,8 @@
 </p>
 
 <div>
-  <p>⊗ Circled Times, tensor product - the relationship between two vectors</p>
+  <p>⊗ Teth</p>
+  <p>Circled Times, tensor product - the relationship between two vectors</p>
   <p>"Ich lebe mein Leben im wachsenden Ringen." - Rainier Maria Rilke</p>
 
   <p>◯ infinite expansion of space</p>
