@@ -3,6 +3,7 @@
   import Contact from './Contact.svelte';
   import Entry from './Entry.svelte';
   import Links from './Links.svelte';
+  import Definitions from './Definitions.svelte';
   import Party from './Party.svelte';
   import Hands from './Hands.svelte';
 
@@ -28,9 +29,9 @@
       title: 'Contact',
     },
     {
-      component: Contact,
+      component: Definitions,
       heading: 'MEANING',
-      title: 'Flavors',
+      title: 'Definitions',
     },
   ];
 </script>
