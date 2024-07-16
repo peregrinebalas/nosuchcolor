@@ -2,6 +2,34 @@
   import portrait from '$lib/assets/pink-portrait.jpg';
 </script>
 
+<div>
+  <dialog>"Descriptor of the Site"</dialog>
+
+  <dialog>
+    Based on the visible spectrum of light to the human eye, and how wavelengths
+    of red and purple are what we know as magenta, or shades of pink. These
+    colors of magenta don't exist on the visible spectrum in isolation, only
+    through the return in the curve on the spectrum do they exist.
+  </dialog>
+
+  <dialog>
+    Only on the choice to make a site do I have one. This site is the product of
+    the decision to make one and how to accomlish that. I've attempted to list
+    my sources in that, everything from inspirations to direct influences.
+  </dialog>
+
+  <dialog>
+    If there is a source you think should be listed that's absent, please
+    navigate to the section for contact and detail what I've missed.
+  </dialog>
+
+  <dialog>Thank you, happy surfing.</dialog>
+
+  <dialog>--NSC, liminalsimile, pereify</dialog>
+</div>
+
+<p></p>
+
 <p class="about-me">
   "I am not sure that I exist, actually. I am all the writers that I have read,
   all the people that I have met, all the women that I have loved; all the

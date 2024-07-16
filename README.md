@@ -13,6 +13,24 @@
 
 ## About
 
+### No Such Information
+
+"Descriptor of the Site"
+
+The title is based on the visible spectrum of light to the human eye. Wavelengths of red and purple are what we know as magenta, and many shades of pink. These colors of magenta don't exist on the visible spectrum in isolation, only through the return in the curve on the spectrum do they exist.
+
+Only on the choice to make a public site do I have one. This site is the product of the decision to make one and how to accomlish that. I've attempted to list my sources in this, everything from inspirations to direct influences and sources.
+
+If there is a source you think should be listed that's absent, please navigate to the section for contact and detail with me what I've missed.
+
+Thank you, happy surfing.
+
+--NSC, liminalsimile, pereify
+
+##Sources
+
+### No Such Source
+
 ### TODO
 
 no such...

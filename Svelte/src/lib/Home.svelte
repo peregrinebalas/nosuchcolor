@@ -5,8 +5,7 @@
   import Links from './Links.svelte';
   import Party from './Party.svelte';
   import Hands from './Hands.svelte';
-  import Right from '$lib/assets/right-hand.png';
-  import Left from '$lib/assets/left-hand.png';
+
   let entries = [
     {
       component: About,
@@ -15,8 +14,8 @@
     },
     {
       component: Links,
-      heading: 'HOST',
-      title: 'Links',
+      heading: 'SOURCE',
+      title: 'Technologies',
     },
     {
       component: Party,
@@ -27,6 +26,11 @@
       component: Contact,
       heading: 'MESSAGE',
       title: 'Contact',
+    },
+    {
+      component: Contact,
+      heading: 'MEANING',
+      title: 'Flavors',
     },
   ];
 </script>
