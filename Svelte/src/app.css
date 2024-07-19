@@ -76,11 +76,17 @@ body {
 .App-home {
   display: flex;
   align-items: center;
-  columns: 3;
+  columns: 2;
   width: 100vw;
   height: 65vh;
   padding-bottom: 10vh;
 
+}
+
+.hands {
+  display: flex;
+  align-items: center;
+  columns: 2;
 }
 
 .App-entries {
