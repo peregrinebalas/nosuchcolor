@@ -21,7 +21,7 @@
 
   {#each links as link}
     <div>
-      <a class="about-me" href={link.url}>{link.title}</a>
+      <a class="entry-p" href={link.url}>{link.title}</a>
     </div>
   {/each}
 </div>

@@ -1,10 +1,11 @@
 <script>
   import { title, titleDisplay, currentSection } from './stores.js';
   export let entry;
-
-  let visible = false;
+  export let visible = false;
+  export let toggleOthers;
 
   function toggleVisible() {
+    toggleOthers();
     visible = !visible;
   }
 

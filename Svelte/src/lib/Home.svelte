@@ -7,6 +7,11 @@
   import Party from './Party.svelte';
   import Hands from './Hands.svelte';
 
+  let visible = false;
+  function toggleAllInvisible() {
+    visible = false;
+  }
+
   let entries = [
     {
       component: About,
@@ -41,7 +46,7 @@
     <ul class="App-entries">
       {#each entries as entry}
         <li>
-          <Entry {entry} />
+          <Entry {visible} {entry} toggleOthers={toggleAllInvisible} />
         </li>
       {/each}
     </ul>

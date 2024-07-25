@@ -5,6 +5,11 @@ body {
   background: radial-gradient(#050609, #010012);
 }
 
+h3 {
+  color: lightgray;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 /* label {
   width: 10vw;
 } */
@@ -93,6 +98,8 @@ body {
   justify-content: left;
   /* width: 60vw; */
 }
+
+
 
 .App-entry {
   color: dimgray;
@@ -183,7 +190,7 @@ body {
 .header-svg-div {
 }
 
-.about-me {
+.entry-p {
   color: ghostwhite;
   font-family: "Courier New", Courier, monospace;
 }

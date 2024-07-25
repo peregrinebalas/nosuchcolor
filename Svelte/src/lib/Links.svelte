@@ -16,7 +16,7 @@
 <div>
   <h3>"List of Sources"</h3>
 
-  <p class="about-me">
+  <p class="entry-p">
     "I am not sure that I exist, actually. I am all the writers that I have
     read, all the people that I have met, all the women that I have loved; all
     the cities I have visited."
@@ -25,7 +25,7 @@
 
   {#each links as link}
     <div>
-      <a class="about-me" href={link.url}>{link.title}</a>
+      <a class="entry-p" href={link.url}>{link.title}</a>
     </div>
   {/each}
 </div>
