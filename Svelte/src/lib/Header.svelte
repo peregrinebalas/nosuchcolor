@@ -1,5 +1,4 @@
 <script>
-  import { get } from 'svelte/store';
   import { title, titleDisplay, currentSection } from './stores.js';
 
   let color = 'color';

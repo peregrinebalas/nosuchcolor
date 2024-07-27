@@ -1,5 +1,5 @@
 <script>
-  import { title, titleDisplay, currentSection } from './stores.js';
+  import { titleDisplay, currentSection } from './stores.js';
   export let entry;
   export let visible = false;
   export let toggleOthers;
