@@ -1,8 +1,12 @@
-export default function TopBar {
-    const color = "COLOR"
+import { useState } from 'react';
+
+export default function TopBar() {
+    let [title, setTitle] = useState("COLOR")
+
     return (
         <div>
-            <h1>NO SUCH {color}</h1>
+            <h1>NO SUCH {title}</h1>
         </div>
     )
+
 }
