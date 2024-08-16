@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 export default function TopBar() {
-    let [title, setTitle] = useState("COLOR")
+    let [title] = useState("COLOR")
 
     return (
         <div>
