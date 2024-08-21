@@ -40,3 +40,242 @@
     transform: rotate(360deg);
   }
 }
+
+/* copied from svelte version of site styling */
+
+body {
+  margin: auto;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  overflow:hidden;
+  background: radial-gradient(#050609, #010012);
+}
+
+h3 {
+  color: lightgray;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* label {
+  width: 10vw;
+} */
+
+.glove {
+  overflow: visible;
+}
+
+.box {
+  z-index: 1;
+  display: flex;
+  width: 20vw;
+  /* justify-content: center; */
+  height: 90vh;
+  margin-top: 25vh;
+  padding-left: 10vh;
+  --mask:
+    radial-gradient(17.40px at 24.60px 50%,#000 99%,#0000 101%) 0 calc(50% - 24px)/51% 48px repeat-y,
+    radial-gradient(17.40px at -12.6px 50%,#0000 99%,#000 101%) 12px 50%/calc(51% - 12px) 48px repeat-y,
+		radial-gradient(17.40px at calc(100% - 24.60px) 50%,#000 99%,#0000 101%) 100% calc(50% - 24px)/51% 48px repeat-y,
+    radial-gradient(17.40px at calc(100% + 12.60px) 50%,#0000 99%,#000 101%) calc(100% - 12px) 50%/calc(51% - 12px) 48px repeat-y;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+}
+
+.portrait {
+  height: 30vh;
+}
+
+.App {
+  /* text-align: center; */
+  background: transparent;
+  height: 100vh;
+}
+
+.App-header {
+  /* background-color: #010012; */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: left;
+  font-size: 4vmin;
+  color: lightgray;
+  padding: 0vh 0vh 0vh 10vh;
+  margin: 0;
+  overflow: visible;
+}
+
+.App-title {
+  font-weight: lighter;
+  -webkit-text-stroke-color: #F8F0FB;
+  font-style: italic;
+  margin-bottom: 0px;
+}
+
+.app-title-div {
+  z-index: 1;
+}
+
+
+.app-title-nav {
+  color: #f9b9e9;
+  color: #D86FA3;
+  
+  -webkit-text-stroke-color: #E84ADD;
+  cursor: default;
+}
+
+.App-home {
+  display: flex;
+  align-items: center;
+  columns: 2;
+  width: 100vw;
+  height: 65vh;
+  padding-bottom: 10vh;
+
+}
+
+.hands {
+  display: flex;
+  align-items: center;
+  columns: 2;
+}
+
+.App-entries {
+  justify-content: left;
+  /* width: 60vw; */
+}
+
+
+
+.App-entry {
+  color: dimgray;
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;/* Geneva, Courier, monospace; /* Georgia, 'Times New Roman', Times, serif; */
+  font-weight: light;
+  font-style: italic;
+  font-size: 3.3rem;
+  margin-top: 20px;
+  display: block;
+}
+
+#App-entry-active {
+  color: lightgray;
+}
+
+.App-entry:hover {
+  color: lightgray;
+}
+
+#right-glove {
+  z-index: 8;
+}
+
+#left-glove {
+  z-index: 5;
+}
+
+.right-hand {
+  margin-top: 20vh;
+  animation: right-wave 85s -2s linear infinite;
+}
+
+.left-hand {
+  animation: left-wave 70s -3s linear infinite;
+}
+
+@keyframes left-wave {
+  2% {
+      transform: translateX(1);
+  }
+
+  20% {
+    transform: translateX(-10%);
+  }
+
+  40% {
+    transform: translateX(-20%);
+  }
+
+  60% {
+    transform: translateX(-35%);
+  }
+
+  80% {
+    transform: translateX(-15%);
+  }
+
+  100% {
+      transform: translateX(1);
+  }
+}
+
+@keyframes right-wave {
+  2% {
+      transform: translateX(1);
+  }
+
+  25% {
+      transform: translateX(-10%);
+  }
+
+  50% {
+      transform: translateX(0%);
+  }
+
+  75% {
+      transform: translateX(15%);
+  }
+
+  100% {
+      transform: translateX(1);
+  }
+}
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+.header-svg-div {
+}
+
+.entry-p {
+  color: ghostwhite;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.entry {
+  height: 20vh;
+  overflow: scroll;
+}
+
+.section-title {
+  display: none;
+}
+
+.section-button {
+  appearance: none;
+  background-color: #ffffff15;
+  border-radius: 40em;
+  border-style: none;
+  box-shadow: #28282d 0 -12px 6px inset;
+  box-sizing: border-box;
+  cursor: default;
+  display: inline-block;
+  /* font-family: monospace; */
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  transition: all .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin: 2vw;
+  height: 10vh;
+  width: 10vh;
+  color: palevioletred;
+}
+
+.section-button:hover {
+  .section-title {
+    display: block;
+    border: 0px;
+  }
+}
