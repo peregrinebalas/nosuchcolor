@@ -1,7 +1,7 @@
-export default function Entry() {
+export default function Entry(title, child) {
     return (
         <div>
-            thing
+            {title}
         </div>
     )
 }
