@@ -1,8 +1,9 @@
 .App {
-  text-align: center;
+  background: transparent;
+  height: 100vh;
 }
 
-.App-logo {
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -11,9 +12,9 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
+} */
 
-.App-header {
+/* .App-header {
   background-color: #282c34;
   min-height: 20vh;
   display: flex;
@@ -22,6 +23,26 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+} */
+
+.App-header {
+  /* background-color: #010012; */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: left;
+  font-size: 4vmin;
+  color: lightgray;
+  padding: 0vh 0vh 0vh 10vh;
+  margin: 0;
+  overflow: visible;
+}
+
+.App-title {
+  font-weight: lighter;
+  -webkit-text-stroke-color: #F8F0FB;
+  font-style: italic;
+  margin-bottom: 0px;
 }
 
 .App-body {
@@ -84,31 +105,9 @@ h3 {
   height: 30vh;
 }
 
-.App {
-  /* text-align: center; */
-  background: transparent;
-  height: 100vh;
-}
 
-.App-header {
-  /* background-color: #010012; */
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: left;
-  font-size: 4vmin;
-  color: lightgray;
-  padding: 0vh 0vh 0vh 10vh;
-  margin: 0;
-  overflow: visible;
-}
 
-.App-title {
-  font-weight: lighter;
-  -webkit-text-stroke-color: #F8F0FB;
-  font-style: italic;
-  margin-bottom: 0px;
-}
+
 
 .app-title-div {
   z-index: 1;
