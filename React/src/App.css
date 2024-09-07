@@ -105,14 +105,9 @@ h3 {
   height: 30vh;
 }
 
-
-
-
-
 .app-title-div {
   z-index: 1;
 }
-
 
 .app-title-nav {
   color: #f9b9e9;
@@ -129,7 +124,6 @@ h3 {
   width: 100vw;
   height: 65vh;
   padding-bottom: 10vh;
-
 }
 
 .hands {
@@ -142,8 +136,6 @@ h3 {
   justify-content: left;
   /* width: 60vw; */
 }
-
-
 
 .App-entry {
   color: dimgray;
